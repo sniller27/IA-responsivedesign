@@ -1,2 +1,6 @@
 body {
-  background-color: red; }
+  background-color: wheat; }
+  body p {
+    color: red; }
+  body a {
+    display: flex; }

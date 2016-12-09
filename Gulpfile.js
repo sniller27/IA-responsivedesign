@@ -22,7 +22,16 @@ gulp.task('styles', function() {
 //         }))
 //         .pipe(gulp.dest('css'))
 // );
- 
+
+//Susy for grid
+gulp.task('sass', function() {
+  return gulp.src('scss/*.scss')
+      .pipe(sass({
+          outputStyle: 'compressed',
+          includePaths: ['node_modules/susy/sass']
+      }).on('error', sass.logError))
+      .pipe(gulp.dest('./css'));
+});
  
  //Browser sync
 gulp.task('connect-sync', function() {
@@ -43,5 +52,6 @@ gulp.task('bs-reload', function () {
 gulp.task('default', ['connect-sync'], function () {
     gulp.watch(['./*.php','./*.js', './css/*.css', './sass/*.scss'], ['styles']);
     // gulp.watch(['./*.php','./*.js', './css/*.css', './sass/*.scss'], ['autoprefixer']);
-    gulp.watch(['./*.php','./*.js', './css/*.css', './sass/*.scss'], ['bs-reload']);
+    // gulp.watch(['./*.php','./*.js', './css/*.css', './sass/*.scss'], ['bs-reload']);
+    gulp.watch(['./*.php','./*.js', './css/*.css', './sass/*.scss'], ['sass']);
 });

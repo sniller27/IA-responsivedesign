@@ -1,9 +1,339 @@
+@import "../node_modules/susy/sass/_susy.scss";
+// @import "susy";
+
+
+/**
+
+    SASS VARIABLES
+
+**/
+//FONTS
+$font-stack: 'Open Sans', sans-serif;
+
+//COLORS
+$white: #FFFFFF;
+$darkred: #b71111;
+$lightred: #d41414;
+$lightgreen: #55a939;
+$darkgreen: #3e9f1a;
+
+
+/**
+
+    CUSTOM SASS
+
+**/
+//HEADERS
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 30px;
+}
+
+
+//BODY
 body {
-	background-color: wheat;
-	p {
-		color: red;
-	}
-	a {
+  font-family: $font-stack;
+}
+
+
+//SASS map (ligesom associative arrays/hasmaps)
+/* Changing Susy default global settings */
+// $susy: (
+// 	/* number of columns */
+//   columns: 12,
+//   gutters: 1/4,
+//   math: fluid,
+//   output: float,
+//   gutter-position: inside,
+//   /* container width */
+//   container: 1120px,
+//   global-box-sizing: border-box 
+// );
+
+//susy map/config
+$susy : (
+  columns: 12,
+  gutters: 1,
+  container: 1024px
+);
+
+//TOP PAGE OVERLAY
+.overlayparent {
+	position: relative;
+  line-height: 0;
+}
+.overlay {
+    width: 100%;
+    background-color: rgba(0, 255, 0, 0.2);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    //for jumbtron (using flexbox)
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+//JUMBOTRON
+.myjumbotron {
+  height: 50%;
+  text-align: center;
+  line-height: 2;
+
+  h1{
+    color: $white;
+    font-weight: 900;
+    font-size: 3.5vw;
+  }
+  h2{
+    color: $white;
+    font-size: 1.5vw;
+  }
+  .myitalic {
+    font-style: italic;
+  }
+  a {
+    line-height: 1;
+    display: inline-block;
+    padding: 12px 25px 12px 25px;
+    background-color: $darkred;
+    color: $white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.1s;
+    margin-top: 7%;
+    box-shadow: 1px 3px 7px -2px rgba(1,1,0,1);
+  }
+  a:hover {
+    background-color: $lightred;
+  }
+}
+
+video { 
+    // width: 100%;
+    // height: 100vh;
+    // z-index: -100;
+    // transform: translateX(-50%) translateY(-50%);
+	// background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+	background-size: cover;
+	// transition: 1s opacity;
+	margin: auto;
+	@include show-grid(12);
+	width: 100%;
+}
+
+.wrap {
+	header {
+		position: fixed;
+		width: 100%;
+		z-index: 222;
 	}
+}
+
+.sectionheader {
+  background-color: $darkgreen;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.factheader, .eventheader, .howtoheader, .contactheader {
+  @include container;
+  line-height: 1.5;
+  
+  //height (temporary)
+  div {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+//FACTS SECTION
+.factheader {
+  .factscircles {
+    background-color: red;
+    
+    h2 {
+      display: inline-block;
+    }
+
+    img {
+      border-radius: 100px;
+    }
+  }
+  .factsquick {
+    background-color: yellow;
+  }
+}
+
+//EVENTS
+.eventheader {
+  .event {
+    background-color: purple;
+  }
+}
+
+.howtoheader {
+  .guideinfo {
+    background-color: blue;
+  }
+  .register {
+    text-align: center;
+    padding: 20px;
+
+    a{
+        padding: 12px 25px 12px 25px;
+        background-color: $darkred;
+        color: $white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: 0.1s;
+        margin-top: 7%;
+        box-shadow: 1px 3px 7px -2px rgba(1,1,0,1);
+    }
+    a:hover {
+    background-color: $lightred;
+    }
+  }
+}
+
+.contactheader {
+  form {
+    background-color: blue;
+    width: 350px;
+    margin: auto;
+    text-align: center;
+
+    input, button, textarea {
+      display: block;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+    textarea {
+      height: 300px;
+      resize: none;
+    }
+  }
+}
+
+//FOOTER
+#footer {
+  height: 100px;
+  background-color: $darkgreen;
+}
+
+/**
+
+		RESPONSIVE NAVBAR
+
+**/
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 680px){
+	ul.topnav {
+    display: inline-block;
+		float: right;
+	}
+}
+
+
+
+
+
+
+/*
+
+    LARGE SCREEN
+
+*/
+@media screen and (min-width: 1024px){
+
+  //FACTS
+  .factheader {
+    .factscircles {
+      @include span(6);
+    }
+
+    .factsquick {
+      @include span(6 last);
+    }
+  }
+  
+  //3 COLUMN LAYOUT
+  .event, .guideinfo {
+    &:nth-child(1), &:nth-child(2){
+      @include span(4);
+    }
+    &:nth-child(3){
+      @include span(4 last);
+    }
+  }
+  
+  //EVENTS
+  .event {
+    h2{
+      text-align: center;
+    }
+  }
+
 }

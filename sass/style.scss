@@ -16,6 +16,7 @@ $darkred: #b71111;
 $lightred: #d41414;
 $lightgreen: #55a939;
 $darkgreen: #3e9f1a;
+$lightgray: #DCDCDC;
 
 
 /**
@@ -23,7 +24,7 @@ $darkgreen: #3e9f1a;
     CUSTOM SASS
 
 **/
-//HEADERS
+//TEXT HEADERS
 h1 {
   font-size: 50px;
 }
@@ -35,6 +36,9 @@ h2 {
 //BODY
 body {
   font-family: $font-stack;
+  button, input, textarea {
+    font-family: $font-stack;
+  }
 }
 
 
@@ -58,6 +62,15 @@ $susy : (
   gutters: 1,
   container: 1024px
 );
+
+//PAGE HEADER
+header {
+  transition: 0.5s;
+}
+.header-bg {
+  background: $darkgreen;
+  transition: 0.5s;
+}
 
 //TOP PAGE OVERLAY
 .overlayparent {
@@ -157,35 +170,44 @@ video {
 //FACTS SECTION
 .factheader {
   .factscircles {
-    background-color: red;
-    
-    h2 {
-      display: inline-block;
-    }
+    /*background-color: red;*/
 
-    img {
-      border-radius: 100px;
+    .circle {
+        display: flex;
+        div {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          img {
+            border-radius: 100px;
+          }
+          p {
+            font-weight: 600;
+          }
+        }
     }
   }
   .factsquick {
-    background-color: yellow;
+    /*background-color: yellow;*/
   }
 }
 
 //EVENTS
 .eventheader {
   .event {
-    background-color: purple;
+    /*background-color: purple;*/
   }
 }
 
 .howtoheader {
   .guideinfo {
-    background-color: blue;
+    /*background-color: blue;*/
   }
   .register {
     text-align: center;
-    padding: 20px;
+    @include span(12);
+    padding: 50px;
 
     a{
         padding: 12px 25px 12px 25px;
@@ -204,20 +226,47 @@ video {
 }
 
 .contactheader {
+  h2, h1 {
+    text-align: center;
+  }
   form {
-    background-color: blue;
-    width: 350px;
-    margin: auto;
+    /*background-color: blue;*/
+    width: 300px;
+    margin: 30px auto;
     text-align: center;
 
-    input, button, textarea {
+    input, textarea {
       display: block;
       margin-bottom: 10px;
       width: 100%;
+      box-sizing: border-box;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background: $lightgray;
     }
     textarea {
-      height: 300px;
+      height: 200px;
       resize: none;
+      margin-bottom: 30px;
+    }
+    button {
+      line-height: 1;
+      display: inline-block;
+      padding: 12px 25px 12px 25px;
+      background-color: $darkred;
+      color: $white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.1s;
+      box-shadow: 1px 3px 7px -2px rgba(1,1,0,1);
+
+      border: none;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: $lightred;
+      cursor: pointer;
     }
   }
 }
@@ -239,7 +288,7 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    /*background-color: #333;*/
 }
 
 /* Float the list items side by side */
@@ -257,7 +306,9 @@ ul.topnav li a {
 }
 
 /* Change background color of links on hover */
-ul.topnav li a:hover {background-color: #555;}
+ul.topnav li a:hover {
+  /*background-color: #555;*/
+}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
@@ -306,7 +357,12 @@ ul.topnav li.icon {display: none;}
     LARGE SCREEN
 
 */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
+
+  //SPACE
+  .factheader, .eventheader, .howtoheader, .contactheader {
+    margin: 100px auto;
+  }
 
   //FACTS
   .factheader {

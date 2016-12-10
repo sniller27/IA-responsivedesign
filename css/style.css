@@ -16,8 +16,17 @@ h2 {
 
 body {
   font-family: "Open Sans", sans-serif; }
+  body button, body input, body textarea {
+    font-family: "Open Sans", sans-serif; }
 
 /* Changing Susy default global settings */
+header {
+  transition: 0.5s; }
+
+.header-bg {
+  background: #3e9f1a;
+  transition: 0.5s; }
+
 .overlayparent {
   position: relative;
   line-height: 0; }
@@ -93,24 +102,34 @@ video {
     box-sizing: border-box; }
 
 .factheader .factscircles {
-  background-color: red; }
-  .factheader .factscircles h2 {
-    display: inline-block; }
-  .factheader .factscircles img {
-    border-radius: 100px; }
+  /*background-color: red;*/ }
+  .factheader .factscircles .circle {
+    display: flex; }
+    .factheader .factscircles .circle div {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .factheader .factscircles .circle div img {
+        border-radius: 100px; }
+      .factheader .factscircles .circle div p {
+        font-weight: 600; }
 
 .factheader .factsquick {
-  background-color: yellow; }
+  /*background-color: yellow;*/ }
 
 .eventheader .event {
-  background-color: purple; }
+  /*background-color: purple;*/ }
 
 .howtoheader .guideinfo {
-  background-color: blue; }
+  /*background-color: blue;*/ }
 
 .howtoheader .register {
   text-align: center;
-  padding: 20px; }
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 50px; }
   .howtoheader .register a {
     padding: 12px 25px 12px 25px;
     background-color: #b71111;
@@ -123,18 +142,42 @@ video {
   .howtoheader .register a:hover {
     background-color: #d41414; }
 
-.contactheader form {
-  background-color: blue;
-  width: 350px;
-  margin: auto;
+.contactheader h2, .contactheader h1 {
   text-align: center; }
-  .contactheader form input, .contactheader form button, .contactheader form textarea {
+
+.contactheader form {
+  /*background-color: blue;*/
+  width: 300px;
+  margin: 30px auto;
+  text-align: center; }
+  .contactheader form input, .contactheader form textarea {
     display: block;
     margin-bottom: 10px;
-    width: 100%; }
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #DCDCDC; }
   .contactheader form textarea {
-    height: 300px;
-    resize: none; }
+    height: 200px;
+    resize: none;
+    margin-bottom: 30px; }
+  .contactheader form button {
+    line-height: 1;
+    display: inline-block;
+    padding: 12px 25px 12px 25px;
+    background-color: #b71111;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.1s;
+    box-shadow: 1px 3px 7px -2px #010100;
+    border: none;
+    margin-bottom: 10px; }
+  .contactheader form button:hover {
+    background-color: #d41414;
+    cursor: pointer; }
 
 #footer {
   height: 100px;
@@ -151,7 +194,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333; }
+  /*background-color: #333;*/ }
 
 /* Float the list items side by side */
 ul.topnav li {
@@ -169,7 +212,7 @@ ul.topnav li a {
 
 /* Change background color of links on hover */
 ul.topnav li a:hover {
-  background-color: #555; }
+  /*background-color: #555;*/ }
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {
@@ -208,7 +251,9 @@ ul.topnav li.icon {
     LARGE SCREEN
 
 */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  .factheader, .eventheader, .howtoheader, .contactheader {
+    margin: 100px auto; }
   .factheader .factscircles {
     width: 47.82609%;
     float: left;

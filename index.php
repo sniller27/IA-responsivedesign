@@ -79,16 +79,31 @@
 		<div class="factheader">
 		    <div class="factscircles">
 				<div class="circle">
-					<img src="http://lorempixel.com/100/100/" />
-					<h2>Fun fact</h2>
+					<div>
+						<img src="http://lorempixel.com/100/100/" />
+					</div>
+					<div>
+						<h2>1#</h2>
+						<p>Downhill Adventure has the biggest driving terrain in Europe.</p>							
+					</div>
 				</div>
 				<div class="circle">
-					<img src="http://lorempixel.com/100/100/" />
-					<h2>Fun fact</h2>
+					<div>
+						<img src="http://lorempixel.com/100/100/" />
+					</div>
+					<div>
+						<h2>2#</h2>
+						<p>Downhill Adventure has the best reputation for driving in mountains.</p>							
+					</div>
 				</div>
 				<div class="circle">
-					<img src="http://lorempixel.com/100/100/" />
-					<h2>Fun fact</h2>
+					<div>
+						<img src="http://lorempixel.com/100/100/" />
+					</div>
+					<div>
+					<h2>3#</h2>
+						<p>Downhill Advendture is the cheapest location in Europe for mountain bike competition</p>							
+					</div>
 				</div>
 		    </div>
 		    <div class="factsquick">
@@ -159,11 +174,11 @@
 		</div>
 
 		<div class="contactheader">
+			<h1>Any questions?</h1>
+			<h2>Send us a message</h2>
 		    <form action="#" method="post">
-		    	<input type="text" name="email" placeholder="email">
-		    	<textarea name="message" id="contactmessage">
-		    		
-		    	</textarea>
+		    	<input type="text" name="email" placeholder="Email">
+		    	<textarea name="message" id="contactmessage" placeholder="Write message here..."></textarea>
 		    	<button type="submit">Send Message</button>
 		    </form>
 		</div>

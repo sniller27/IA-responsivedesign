@@ -37,4 +37,16 @@ $(document).ready(function(){
 
 	});
 
+
+	//show and hide menu background color
+	$(window).scroll(function () {
+	    var $this = $(this),
+	        $header = $('header');
+	    if ($this.scrollTop() > 0) {
+	       $header.addClass('header-bg');
+	    } else {
+	       $header.removeClass('header-bg');
+	    }
+	});
+
 })

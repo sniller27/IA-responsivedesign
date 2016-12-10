@@ -1,0 +1,75 @@
+@import "../node_modules/susy/sass/_susy.scss";
+
+/*
+
+    MEDIUM SCREEN
+
+*/
+@media screen and (min-width: 768px){
+
+  //SPACE
+  .factheader, .eventheader, .howtoheader, .contactheader {
+    margin: 100px auto;
+  }
+
+  //JUMBOTRON
+  .myjumbotron {
+    h1 {
+      line-height: 1;
+      font-size: 4vw;
+    }
+    h2 {
+      display: block;
+      font-size: 2.5vw;
+      line-height: 1.5;
+    }
+    .logotop {
+      height: 100px;
+      width: 200px;
+      background: url("http://smbc.net/wp-content/uploads/2015/12/mountain-black.png");
+      background: url(http://smbc.net/wp-content/uploads/2015/12/mountain-black.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: auto;
+    }
+  }
+
+  //FACTS
+  .factheader {
+    .factscircles {
+      @include span(6);
+    }
+
+    .factsquick {
+      @include span(6 last);
+    }
+  }
+  
+  //3 COLUMN LAYOUT
+  .event, .guideinfo {
+    &:nth-child(1), &:nth-child(2){
+      @include span(4);
+    }
+    &:nth-child(3){
+      @include span(4 last);
+    }
+  }
+  
+  //EVENTS
+  .event {
+    h2{
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+
+
+  //NAVBAR
+  ul.topnav {
+    background: transparent;
+  }
+
+}

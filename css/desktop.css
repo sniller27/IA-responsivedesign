@@ -1,0 +1,14 @@
+/*
+
+    LARGE SCREEN
+
+*/
+@media screen and (min-width: 1035px) {
+  .myjumbotron h1 {
+    font-size: 3.5vw; }
+  .myjumbotron h2 {
+    font-size: 1.7vw;
+    line-height: 2; }
+  .howtoheader {
+    border-radius: 8px;
+    background-color: red; } }

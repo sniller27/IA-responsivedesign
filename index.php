@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="EN">
 	<head>
 		
 		<title>Moutainbike Adventure</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="http://smbc.net/wp-content/uploads/2015/12/mountain-black.png" />
 
 		<!-- CSS reset -->
 		<link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -48,10 +51,12 @@
 					
 
 				<div class="myjumbotron">
+
+					<div class="logotop"></div>
 					<h1>Join the downhill adventure</h1>
 					<h2>The registration for this years most anticipated event is now available!</h2>
 					<h2 class="myitalic">20th to 26th of June 2017 - Switzerland</h2>
-					<a href="#">Register</a>
+					<a href="#">Register now</a>
 				</div>
 				
 					
@@ -80,7 +85,7 @@
 		    <div class="factscircles">
 				<div class="circle">
 					<div>
-						<img src="http://lorempixel.com/100/100/" />
+						<img src="http://lorempixel.com/100/100/" alt="img1"  />
 					</div>
 					<div>
 						<h2>1#</h2>
@@ -89,7 +94,7 @@
 				</div>
 				<div class="circle">
 					<div>
-						<img src="http://lorempixel.com/100/100/" />
+						<img src="http://lorempixel.com/100/100/" alt="img2" />
 					</div>
 					<div>
 						<h2>2#</h2>
@@ -98,7 +103,7 @@
 				</div>
 				<div class="circle">
 					<div>
-						<img src="http://lorempixel.com/100/100/" />
+						<img src="http://lorempixel.com/100/100/" alt="img3" />
 					</div>
 					<div>
 					<h2>3#</h2>
@@ -123,17 +128,17 @@
 
 		<div class="eventheader">
 		    <div class="event">
-			<img src="http://lorempixel.com/200/100/" alt="">
+			<img src="http://lorempixel.com/200/100/" alt="img4">
 		    <h2>events</h2>
 			<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
 		    </div>
 		    <div class="event">
-			<img src="http://lorempixel.com/200/100/" alt="">
+			<img src="http://lorempixel.com/200/100/" alt="img5">
 		    <h2>events</h2>
 			<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
 		    </div>
 		    <div class="event">
-			<img src="http://lorempixel.com/200/100/" alt="">
+			<img src="http://lorempixel.com/200/100/" alt="img6">
 		    <h2>events</h2>
 			<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
 		    </div>
@@ -145,25 +150,27 @@
 			<h1>HOW TO GET STARTED</h1>
 
 		</div>
+		
+		<div class="howtobg">
+			<div class="howtoheader">
+			    <div class="guideinfo">
+			    <h2>Price</h2>
+				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
+			    </div>
+			    <div class="guideinfo">
+			    <h2>Accommodation</h2>
+				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
+			    </div>
+			    <div class="guideinfo">
+			    <h2>Equipment</h2>
+				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
+			    </div>
 
-		<div class="howtoheader">
-		    <div class="guideinfo">
-		    <h2>Price</h2>
-			<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
-		    </div>
-		    <div class="guideinfo">
-		    <h2>Accommodation</h2>
-			<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
-		    </div>
-		    <div class="guideinfo">
-		    <h2>Equipment</h2>
-			<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
-		    </div>
+				<div class="register">
+			    	<a href="#">Register</a>
+				</div>
 
-			<div class="register">
-		    	<a href="#">Register</a>
 			</div>
-
 		</div>
 
 		<!-- CONTACT -->

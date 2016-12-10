@@ -42,6 +42,9 @@
 				  <li><a href="#contact" id="goevents">Events</a></li>
 				  <li><a href="#about" id="gohowto">How To</a></li>
 				  <li><a href="#about" id="gocontact">Contact</a></li>
+				  <li class="icon">
+				    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				  </li>
 				</ul>
 			</header>
 

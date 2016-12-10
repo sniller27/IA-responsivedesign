@@ -3,6 +3,9 @@
 	<head>
 		
 		<title>Moutainbike Adventure</title>
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="http://smbc.net/wp-content/uploads/2015/12/mountain-black.png" />
@@ -39,9 +42,6 @@
 				  <li><a href="#contact" id="goevents">Events</a></li>
 				  <li><a href="#about" id="gohowto">How To</a></li>
 				  <li><a href="#about" id="gocontact">Contact</a></li>
-				  <li class="icon">
-				    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-				  </li>
 				</ul>
 			</header>
 
@@ -129,18 +129,21 @@
 		<div class="eventbg">
 			<div class="eventheader">
 			    <div class="event">
-				<img src="http://lorempixel.com/200/100/" alt="img4">
-			    <h2>events</h2>
+				<img src="assets/images/competition.jpg" alt="Mountain bike competition">
+			    <h2>Mountain bike competition</h2>
+			    <p class="italic">June 25-26th</p>
 				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
 			    </div>
 			    <div class="event">
-				<img src="http://lorempixel.com/200/100/" alt="img5">
-			    <h2>events</h2>
+				<img src="assets/images/grill.jpg" alt="Grill">
+			    <h2>Grill party</h2>
+			    <p class="italic">June 25-26th</p>
 				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
 			    </div>
 			    <div class="event">
-				<img src="http://lorempixel.com/200/100/" alt="img6">
-			    <h2>events</h2>
+				<img src="assets/images/hiking.jpg" alt="Hiking">
+			    <h2>Hiking</h2>
+			    <p class="italic">June 20-26th</p>
 				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
 			    </div>
 			</div>

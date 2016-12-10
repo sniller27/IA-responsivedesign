@@ -43,5 +43,7 @@
   .event img {
     display: block;
     margin: auto; }
+  .event .italic {
+    text-align: center; }
   ul.topnav {
     background: transparent; } }

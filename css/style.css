@@ -130,6 +130,12 @@ video {
     background: transparent; }
     .eventbg .eventheader .event {
       /*background-color: purple;*/ }
+      .eventbg .eventheader .event img {
+        width: 100%; }
+      .eventbg .eventheader .event .italic {
+        font-style: italic;
+        color: #a9a9a9;
+        margin: 7px auto; }
 
 .howtobg {
   background: url("https://i.ytimg.com/vi/61aM0DXpKkc/maxresdefault.jpg");
@@ -310,6 +316,8 @@ ul.topnav li.icon {
   .event img {
     display: block;
     margin: auto; }
+  .event .italic {
+    text-align: center; }
   ul.topnav {
     background: transparent; } }
 

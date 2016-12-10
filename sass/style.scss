@@ -17,6 +17,7 @@ $lightred: #d41414;
 $lightgreen: #55a939;
 $darkgreen: #3e9f1a;
 $lightgray: #DCDCDC;
+$darkgray: #a9a9a9;
 
 //Tablet mediaquery
 $tablet: 768px;
@@ -200,6 +201,15 @@ video {
 
     .event {
       /*background-color: purple;*/
+
+      img {
+        width: 100%;
+      }
+      .italic {
+        font-style: italic;
+        color: $darkgray;
+        margin: 7px auto;
+      }
     }
   }
 }
@@ -440,6 +450,9 @@ ul.topnav li.icon {display: none;}
     img {
       display: block;
       margin: auto;
+    }
+    .italic {
+      text-align: center;
     }
   }
 

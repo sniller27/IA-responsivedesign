@@ -185,9 +185,22 @@ video {
 }
 
 //EVENTS
-.eventheader {
-  .event {
-    /*background-color: purple;*/
+.eventbg {
+  
+  //bacground image
+  /*background: url("http://image1.redbull.com/rbcom/010/2016-06-13/1331800182550_2/0010/1/1500/1000/2/aaron-gwin-leogang.jpg");*/
+  /*background-size: cover;*/
+  /*overflow: auto;*/
+
+  .eventheader {
+    /*background-color: rgba(209, 232, 240, 0.7);
+    padding: 10px;*/
+
+    background: transparent;
+
+    .event {
+      /*background-color: purple;*/
+    }
   }
 }
 
@@ -228,48 +241,56 @@ video {
   }
 }
 
-.contactheader {
-  h2, h1 {
-    text-align: center;
-  }
-  form {
-    /*background-color: blue;*/
-    width: 300px;
-    margin: 30px auto;
-    text-align: center;
+.contactbg {
+  
+  //bacground image
+  background: url("http://i.nextmedia.com.au/Galleries/20161108111920_stmortiz-9728.jpg");
+  background-size: cover;
+  overflow: auto;
 
-    input, textarea {
-      display: block;
-      margin-bottom: 10px;
-      width: 100%;
-      box-sizing: border-box;
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      background: $lightgray;
+  .contactheader {
+    h2, h1 {
+      text-align: center;
     }
-    textarea {
-      height: 200px;
-      resize: none;
-      margin-bottom: 30px;
-    }
-    button {
-      line-height: 1;
-      display: inline-block;
-      padding: 12px 25px 12px 25px;
-      background-color: $darkred;
-      color: $white;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: 0.1s;
-      box-shadow: 1px 3px 7px -2px rgba(1,1,0,1);
+    form {
+      /*background-color: blue;*/
+      width: 300px;
+      margin: 30px auto;
+      text-align: center;
 
-      border: none;
-      margin-bottom: 10px;
-    }
-    button:hover {
-      background-color: $lightred;
-      cursor: pointer;
+      input, textarea {
+        display: block;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        background: $lightgray;
+      }
+      textarea {
+        height: 200px;
+        resize: none;
+        margin-bottom: 30px;
+      }
+      button {
+        line-height: 1;
+        display: inline-block;
+        padding: 12px 25px 12px 25px;
+        background-color: $darkred;
+        color: $white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: 0.1s;
+        box-shadow: 1px 3px 7px -2px rgba(1,1,0,1);
+
+        border: none;
+        margin-bottom: 10px;
+      }
+      button:hover {
+        background-color: $lightred;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -363,6 +384,11 @@ ul.topnav li.icon {display: none;}
     margin: 100px auto;
   }
 
+  //HEADER
+  .header-bg {
+    // box-shadow: 1px 0px 7px -2px #010100;
+  }
+
   //JUMBOTRON
   .myjumbotron {
     h1 {
@@ -444,7 +470,7 @@ ul.topnav li.icon {display: none;}
 		}
 	}
 
-	.howtoheader {
+	.howtoheader, .eventheader {
 	    border-radius: 8px;
 	    background-color: red;
 	}

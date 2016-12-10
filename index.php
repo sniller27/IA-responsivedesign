@@ -125,23 +125,25 @@
 			<h1>EVENTS</h1>
 
 		</div>
-
-		<div class="eventheader">
-		    <div class="event">
-			<img src="http://lorempixel.com/200/100/" alt="img4">
-		    <h2>events</h2>
-			<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
-		    </div>
-		    <div class="event">
-			<img src="http://lorempixel.com/200/100/" alt="img5">
-		    <h2>events</h2>
-			<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
-		    </div>
-		    <div class="event">
-			<img src="http://lorempixel.com/200/100/" alt="img6">
-		    <h2>events</h2>
-			<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
-		    </div>
+		
+		<div class="eventbg">
+			<div class="eventheader">
+			    <div class="event">
+				<img src="http://lorempixel.com/200/100/" alt="img4">
+			    <h2>events</h2>
+				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
+			    </div>
+			    <div class="event">
+				<img src="http://lorempixel.com/200/100/" alt="img5">
+			    <h2>events</h2>
+				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
+			    </div>
+			    <div class="event">
+				<img src="http://lorempixel.com/200/100/" alt="img6">
+			    <h2>events</h2>
+				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
+			    </div>
+			</div>
 		</div>
 
 		<!-- HOW-TO -->
@@ -167,7 +169,7 @@
 			    </div>
 
 				<div class="register">
-			    	<a href="#">Register</a>
+			    	<a href="#">See packages</a>
 				</div>
 
 			</div>
@@ -179,15 +181,16 @@
 			<h1>CONTACT</h1>
 
 		</div>
-
-		<div class="contactheader">
-			<h1>Any questions?</h1>
-			<h2>Send us a message</h2>
-		    <form action="#" method="post">
-		    	<input type="text" name="email" placeholder="Email">
-		    	<textarea name="message" id="contactmessage" placeholder="Write message here..."></textarea>
-		    	<button type="submit">Send Message</button>
-		    </form>
+		<div class="contactbg">
+			<div class="contactheader">
+				<h1>Any questions?</h1>
+				<h2>Send us a message</h2>
+			    <form action="#" method="post">
+			    	<input type="text" name="email" placeholder="Email">
+			    	<textarea name="message" id="contactmessage" placeholder="Write message here..."></textarea>
+			    	<button type="submit">Send Message</button>
+			    </form>
+			</div>
 		</div>
 		
 		<div id="footer">

@@ -1,3 +1,4 @@
+/* Changing Susy default global settings by using map */
 /**
 
     SASS VARIABLES
@@ -19,7 +20,6 @@ body {
   body button, body input, body textarea {
     font-family: "Open Sans", sans-serif; }
 
-/* Changing Susy default global settings by using map */
 header {
   transition: 0.5s; }
 
@@ -39,11 +39,8 @@ header {
   top: 0;
   left: 0;
   height: 100%;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: center;
   justify-content: center; }
 
 .myjumbotron {
@@ -88,14 +85,15 @@ video {
 
 .sectionheader {
   background-color: #3e9f1a;
-  height: 100px;
   text-align: center;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
   align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  font-weight: 600;
+  padding: 25px; }
+  .sectionheader h1 {
+    font-size: 25px;
+    color: #FFFFFF; }
 
 .factheader, .eventheader, .howtoheader, .contactheader {
   max-width: 1024px;
@@ -110,52 +108,33 @@ video {
     padding: 10px;
     box-sizing: border-box; }
 
-.factheader .factscircles {
-  /*background-color: red;*/ }
-  .factheader .factscircles .circle {
-    display: -ms-flexbox;
-    display: flex; }
-    .factheader .factscircles .circle div {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      .factheader .factscircles .circle div img {
-        border-radius: 100px; }
-      .factheader .factscircles .circle div p {
-        font-weight: 600; }
+.factheader .factscircles .circle {
+  display: flex; }
+  .factheader .factscircles .circle div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    .factheader .factscircles .circle div img {
+      border-radius: 100px; }
+    .factheader .factscircles .circle div p {
+      font-weight: 600; }
 
-.factheader .factsquick {
-  /*background-color: yellow;*/ }
-
-.eventbg {
-  /*background: url("http://image1.redbull.com/rbcom/010/2016-06-13/1331800182550_2/0010/1/1500/1000/2/aaron-gwin-leogang.jpg");*/
-  /*background-size: cover;*/
-  /*overflow: auto;*/ }
-  .eventbg .eventheader {
-    /*background-color: rgba(209, 232, 240, 0.7);
-    padding: 10px;*/
-    background: transparent; }
-    .eventbg .eventheader .event {
-      /*background-color: purple;*/ }
-      .eventbg .eventheader .event img {
-        width: 100%; }
-      .eventbg .eventheader .event .italic {
-        font-style: italic;
-        color: #a9a9a9;
-        margin: 7px auto; }
+.eventbg .eventheader {
+  background: transparent; }
+  .eventbg .eventheader .event img {
+    width: 100%; }
+  .eventbg .eventheader .event .italic {
+    font-style: italic;
+    color: #a9a9a9;
+    margin: 7px auto; }
 
 .howtobg {
-  background: url("https://i.ytimg.com/vi/61aM0DXpKkc/maxresdefault.jpg");
+  background: url("../assets/images/drivingdownhill.jpg");
   background-size: cover;
   overflow: auto; }
   .howtobg .howtoheader {
     background-color: rgba(209, 232, 240, 0.7);
     padding: 10px; }
-    .howtobg .howtoheader .guideinfo {
-      /*background-color: blue;*/ }
     .howtobg .howtoheader .register {
       text-align: center;
       width: 100%;
@@ -176,13 +155,12 @@ video {
         background-color: #d41414; }
 
 .contactbg {
-  background: url("http://i.nextmedia.com.au/Galleries/20161108111920_stmortiz-9728.jpg");
+  background: url("../assets/images/mountains.jpg");
   background-size: cover;
   overflow: auto; }
   .contactbg .contactheader h2, .contactbg .contactheader h1 {
     text-align: center; }
   .contactbg .contactheader form {
-    /*background-color: blue;*/
     width: 300px;
     margin: 30px auto;
     text-align: center; }
@@ -229,8 +207,7 @@ ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  /*background-color: $darkgreen;*/ }
+  overflow: hidden; }
 
 /* Float the list items side by side */
 ul.topnav li {
@@ -271,7 +248,7 @@ ul.topnav li.icon {
     right: 0;
     top: 0; }
   ul.responsive {
-    background: rgba(51, 51, 51, 0.6); }
+    /*background: rgba($black, 0.6);*/ }
   ul.topnav.responsive li {
     float: none;
     display: inline; }
@@ -301,12 +278,13 @@ ul.topnav li.icon {
     line-height: 1.5; }
   .myjumbotron .logotop {
     height: 100px;
-    width: 200px;
-    background: url("http://smbc.net/wp-content/uploads/2015/12/mountain-black.png");
-    background: url(http://smbc.net/wp-content/uploads/2015/12/mountain-black.png);
+    width: 168px;
+    background: url("../assets/images/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin: auto; }
+  .sectionheader h1 {
+    font-size: 50px; }
   .factheader .factscircles {
     width: 47.82609%;
     float: left;

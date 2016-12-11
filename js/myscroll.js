@@ -50,7 +50,10 @@ $(document).ready(function(){
 	    if ($this.scrollTop() > 0) {
 	       $header.addClass('header-bg');
 	    } else {
-	       $header.removeClass('header-bg');
+
+	    	if (!$("#myTopnav").hasClass("responsive")) {
+	       		$header.removeClass('header-bg');
+	    	}
 	    }
 	});
 

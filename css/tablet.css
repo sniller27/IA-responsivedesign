@@ -15,12 +15,13 @@
     line-height: 1.5; }
   .myjumbotron .logotop {
     height: 100px;
-    width: 200px;
-    background: url("http://smbc.net/wp-content/uploads/2015/12/mountain-black.png");
-    background: url(http://smbc.net/wp-content/uploads/2015/12/mountain-black.png);
+    width: 168px;
+    background: url("../assets/images/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     margin: auto; }
+  .sectionheader h1 {
+    font-size: 50px; }
   .factheader .factscircles {
     width: 152.63158%;
     float: left;

@@ -1,6 +1,11 @@
 @import "../node_modules/susy/sass/_susy.scss";
-// @import "susy";
 
+/* Changing Susy default global settings by using map */
+$susy : (
+  columns: 12,
+  gutters: 1,
+  container: 1024px
+);
  
 /**
 
@@ -23,7 +28,7 @@ $black: #333;
 
 //Tablet mediaquery
 $tablet: 768px;
- 
+
 /**
 
     CUSTOM SASS
@@ -45,14 +50,6 @@ body {
     font-family: $font-stack;
   }
 }
-
-
-/* Changing Susy default global settings by using map */
-$susy : (
-  columns: 12,
-  gutters: 1,
-  container: 1024px
-);
 
 //PAGE HEADER
 header {
@@ -121,13 +118,7 @@ header {
 }
 
 video { 
-    // width: 100%;
-    // height: 100vh;
-    // z-index: -100;
-    // transform: translateX(-50%) translateY(-50%);
-	// background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
 	background-size: cover;
-	// transition: 1s opacity;
 	margin: auto;
 	@include show-grid(12);
 	width: 100%;
@@ -143,11 +134,16 @@ video {
 
 .sectionheader {
   background-color: $darkgreen;
-  height: 100px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 600;
+  padding: 25px;
+  h1 {
+    font-size: 25px;
+    color: $white;
+  }
 }
 
 .factheader, .eventheader, .howtoheader, .contactheader {
@@ -163,8 +159,8 @@ video {
 
 //FACTS SECTION
 .factheader {
+
   .factscircles {
-    /*background-color: red;*/
 
     .circle {
         display: flex;
@@ -182,27 +178,16 @@ video {
         }
     }
   }
-  .factsquick {
-    /*background-color: yellow;*/
-  }
 }
 
 //EVENTS
 .eventbg {
-  
-  //bacground image
-  /*background: url("http://image1.redbull.com/rbcom/010/2016-06-13/1331800182550_2/0010/1/1500/1000/2/aaron-gwin-leogang.jpg");*/
-  /*background-size: cover;*/
-  /*overflow: auto;*/
 
   .eventheader {
-    /*background-color: rgba(209, 232, 240, 0.7);
-    padding: 10px;*/
 
     background: transparent;
 
     .event {
-      /*background-color: purple;*/
 
       img {
         width: 100%;
@@ -219,7 +204,7 @@ video {
 .howtobg {
 
   //bacground image
-  background: url("https://i.ytimg.com/vi/61aM0DXpKkc/maxresdefault.jpg");
+  background: url("../assets/images/drivingdownhill.jpg");
   background-size: cover;
   overflow: auto;
 
@@ -228,9 +213,6 @@ video {
     background-color: rgba(209, 232, 240, 0.7);
     padding: 10px;
 
-    .guideinfo {
-      /*background-color: blue;*/
-    }
     .register {
       text-align: center;
       @include span(12);
@@ -256,7 +238,7 @@ video {
 .contactbg {
   
   //bacground image
-  background: url("http://i.nextmedia.com.au/Galleries/20161108111920_stmortiz-9728.jpg");
+  background: url("../assets/images/mountains.jpg");
   background-size: cover;
   overflow: auto;
 
@@ -265,7 +247,6 @@ video {
       text-align: center;
     }
     form {
-      /*background-color: blue;*/
       width: 300px;
       margin: 30px auto;
       text-align: center;
@@ -324,7 +305,6 @@ ul.topnav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: $darkgreen;*/
 }
 
 /* Float the list items side by side */
@@ -368,7 +348,7 @@ ul.topnav li.icon {display: none;}
   }
   //own
   ul.responsive {
-    background: rgba($black, 0.6);
+    /*background: rgba($black, 0.6);*/
   }
   ul.topnav.responsive li {
     float: none;
@@ -418,12 +398,18 @@ ul.topnav li.icon {display: none;}
     }
     .logotop {
       height: 100px;
-      width: 200px;
-      background: url("http://smbc.net/wp-content/uploads/2015/12/mountain-black.png");
-      background: url(http://smbc.net/wp-content/uploads/2015/12/mountain-black.png);
+      width: 168px;
+      background: url("../assets/images/logo.png");
       background-size: contain;
       background-repeat: no-repeat;
       margin: auto;
+    }
+  }
+
+  //SECTIONS
+  .sectionheader {
+    h1 {
+      font-size: 50px;
     }
   }
 

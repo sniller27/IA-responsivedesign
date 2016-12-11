@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="http://smbc.net/wp-content/uploads/2015/12/mountain-black.png" />
+		<link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
 		<!-- CSS reset -->
 		<link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -88,7 +88,7 @@
 		    <div class="factscircles">
 				<div class="circle">
 					<div>
-						<img src="http://lorempixel.com/100/100/" alt="img1"  />
+						<img src="assets/images/terrain.jpg" alt="terrain"  />
 					</div>
 					<div>
 						<h2>1#</h2>
@@ -97,7 +97,7 @@
 				</div>
 				<div class="circle">
 					<div>
-						<img src="http://lorempixel.com/100/100/" alt="img2" />
+						<img src="assets/images/mountain.jpg" alt="mountain" />
 					</div>
 					<div>
 						<h2>2#</h2>
@@ -106,7 +106,7 @@
 				</div>
 				<div class="circle">
 					<div>
-						<img src="http://lorempixel.com/100/100/" alt="img3" />
+						<img src="assets/images/cheapcompetition.jpg" alt="cheap competition" />
 					</div>
 					<div>
 					<h2>3#</h2>

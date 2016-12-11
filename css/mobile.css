@@ -24,7 +24,7 @@ header {
   transition: 0.5s; }
 
 .header-bg {
-  background: #3e9f1a;
+  background: rgba(51, 51, 51, 0.6);
   transition: 0.5s; }
 
 .overlayparent {
@@ -246,7 +246,7 @@ ul.topnav li.icon {
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width: 768px) {
-  ul.topnav li:not(:first-child) {
+  ul.topnav li {
     display: none; }
   ul.topnav li.icon {
     float: right;
@@ -260,6 +260,8 @@ ul.topnav li.icon {
     position: absolute;
     right: 0;
     top: 0; }
+  ul.responsive {
+    background: rgba(51, 51, 51, 0.6); }
   ul.topnav.responsive li {
     float: none;
     display: inline; }

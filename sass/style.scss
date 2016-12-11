@@ -19,6 +19,8 @@ $darkgreen: #3e9f1a;
 $lightgray: #DCDCDC;
 $darkgray: #a9a9a9;
 
+$black: #333;
+
 //Tablet mediaquery
 $tablet: 768px;
  
@@ -57,7 +59,7 @@ header {
   transition: 0.5s;
 }
 .header-bg {
-  background: $darkgreen;
+  background: rgba($black, 0.6);
   transition: 0.5s;
 }
 
@@ -349,7 +351,7 @@ ul.topnav li.icon {display: none;}
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 @media screen and (max-width:$tablet) {
-  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li {display: none;}
   ul.topnav li.icon {
     float: right;
     display: inline-block;
@@ -363,6 +365,10 @@ ul.topnav li.icon {display: none;}
     position: absolute;
     right: 0;
     top: 0;
+  }
+  //own
+  ul.responsive {
+    background: rgba($black, 0.6);
   }
   ul.topnav.responsive li {
     float: none;

@@ -6,6 +6,7 @@ $(document).ready(function(){
 	$("#gohome").click(function(e) {
 
 	$('#bgvid').animatescroll();
+	$('#myTopnav').removeClass('responsive');
 
 	});
 
@@ -13,6 +14,7 @@ $(document).ready(function(){
 	$("#gofacts").click(function(e) {
 
 	$('#factstop').animatescroll();
+	$('#myTopnav').removeClass('responsive');
 
 	});
 
@@ -20,6 +22,7 @@ $(document).ready(function(){
 	$("#goevents").click(function(e) {
 
 	$('#eventstop').animatescroll();
+	$('#myTopnav').removeClass('responsive');
 
 	});
 
@@ -27,6 +30,7 @@ $(document).ready(function(){
 	$("#gohowto").click(function(e) {
 
 	$('#howtostop').animatescroll();
+	$('#myTopnav').removeClass('responsive');
 
 	});
 
@@ -34,6 +38,7 @@ $(document).ready(function(){
 	$("#gocontact").click(function(e) {
 
 	$('#contactstop').animatescroll();
+	$('#myTopnav').removeClass('responsive');
 
 	});
 

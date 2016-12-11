@@ -15,14 +15,14 @@ gulp.task('styles', function() {
 
 
 ////Autoprexifer (virker ikke lige nu)
-// gulp.task('autoprefixer', () =>
-//     gulp.src('css/style.css')
-//         .pipe(autoprefixer({
-//             browsers: ['last 2 versions'],
-//             cascade: false
-//         }))
-//         .pipe(gulp.dest('css'))
-// );
+gulp.task('autoprefixer', () =>
+    gulp.src('css/style.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('css'))
+);
 
 //Susy for grid
 gulp.task('sass', function() {
@@ -66,7 +66,7 @@ gulp.task('default', ['connect-sync'], function() {
   gulp.watch(['./css/*.css'], ['bs-reload']);
 });
 
-gulp.task('shit', ['connect-sync'], function () {
+gulp.task('build', ['autoprefixer'], function () {
     // gulp.watch(['./*.php','./*.js', './sass/*.scss'], ['styles', 'concat', 'sass']);
     // gulp.watch(['./*.php','./*.js', './sass/*.scss', './css/*.css'], ['bs-reload']);
     // gulp.watch(['./*.php','./*.js', './css/*.css', './sass/*.scss'], ['autoprefixer']);

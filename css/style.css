@@ -25,12 +25,10 @@ body {
     font-family: "Open Sans", sans-serif; }
 
 header {
-  -webkit-transition: 0.5s;
   transition: 0.5s; }
 
 .header-bg {
   background: rgba(51, 51, 51, 0.6);
-  -webkit-transition: 0.5s;
   transition: 0.5s; }
 
 .overlayparent {
@@ -45,14 +43,8 @@ header {
   top: 0;
   left: 0;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center; }
 
 .myjumbotron {
@@ -67,8 +59,7 @@ header {
     margin: auto 30px; }
   .myjumbotron h2 {
     color: #FFFFFF;
-    font-size: 1.5vw;
-    display: none; }
+    font-size: 18px; }
   .myjumbotron .myitalic {
     font-style: italic; }
   .myjumbotron a {
@@ -79,14 +70,14 @@ header {
     color: #FFFFFF;
     text-decoration: none;
     border-radius: 4px;
-    -webkit-transition: 0.1s;
     transition: 0.1s;
-    margin-top: 3%;
+    margin-top: 11%;
     box-shadow: 1px 3px 7px -2px #010100; }
   .myjumbotron a:hover {
     background-color: #d41414; }
   .myjumbotron .logotop {
-    height: 38%;
+    /*height: 38%;*/
+    height: 23%;
     width: 26%;
     background: url("../assets/images/logo.png");
     background-size: contain;
@@ -96,24 +87,23 @@ header {
 video {
   background-size: cover;
   margin: auto;
-  width: 100%; }
+  /*width: 100%;*/
+  height: 100vh;
+  position: relative;
+  left: -300px; }
 
-.wrap header {
-  position: fixed;
-  width: 100%;
-  z-index: 222; }
+.wrap {
+  overflow: hidden; }
+  .wrap header {
+    position: fixed;
+    width: 100%;
+    z-index: 222; }
 
 .sectionheader {
   background-color: #3e9f1a;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   font-weight: 600;
   padding: 25px; }
@@ -135,19 +125,10 @@ video {
     box-sizing: border-box; }
 
 .factheader .factscircles .circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex; }
   .factheader .factscircles .circle div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column; }
     .factheader .factscircles .circle div img {
       border-radius: 100px; }
@@ -211,7 +192,6 @@ video {
       color: #FFFFFF;
       text-decoration: none;
       border-radius: 4px;
-      -webkit-transition: 0.1s;
       transition: 0.1s;
       box-shadow: 1px 3px 7px -2px #010100;
       border: none;
@@ -251,7 +231,6 @@ video {
       color: #FFFFFF;
       text-decoration: none;
       border-radius: 4px;
-      -webkit-transition: 0.1s;
       transition: 0.1s;
       box-shadow: 1px 3px 7px -2px #010100;
       font-weight: 600;
@@ -298,7 +277,6 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 17px; }
 
@@ -348,6 +326,8 @@ ul.topnav li.icon {
 @media screen and (min-width: 768px) {
   .factheader, .eventheader, .howtoheader, .contactheader, .attentionheader {
     margin: 100px auto; }
+  video {
+    left: 0px; }
   .myjumbotron {
     height: 50%; }
     .myjumbotron a {
@@ -418,6 +398,11 @@ ul.topnav li.icon {
 
 */
 @media screen and (min-width: 1035px) {
+  video {
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    height: inherit; }
   .myjumbotron h1 {
     font-size: 3.5vw; }
   .myjumbotron h2 {

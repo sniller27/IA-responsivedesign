@@ -7,6 +7,16 @@
 */
 @media screen and (min-width: 1035px){
 	
+	//VIDEO
+	video { 
+		background-size: cover;
+		margin: auto;
+		@include show-grid(12);
+		width: 100%;
+		height: inherit;
+	}
+	
+	//JUMBOTRON
 	.myjumbotron {
 
 		h1 {

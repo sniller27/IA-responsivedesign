@@ -83,43 +83,44 @@
 			<h1>FACTS</h1>
 
 		</div>
-
-		<div class="factheader">
-		    <div class="factscircles">
-				<div class="circle">
-					<div>
-						<img src="assets/images/terrain.jpg" alt="terrain"  />
+		<div class="factbg">
+			<div class="factheader">
+			    <div class="factscircles">
+					<div class="circle">
+						<div>
+							<img src="assets/images/terrain.jpg" alt="terrain"  />
+						</div>
+						<div>
+							<h2>1#</h2>
+							<p>Downhill Adventure has the biggest driving terrain in Europe.</p>							
+						</div>
 					</div>
-					<div>
-						<h2>1#</h2>
-						<p>Downhill Adventure has the biggest driving terrain in Europe.</p>							
+					<div class="circle">
+						<div>
+							<img src="assets/images/mountain.jpg" alt="mountain" />
+						</div>
+						<div>
+							<h2>2#</h2>
+							<p>Downhill Adventure has the best reputation for driving in mountains.</p>							
+						</div>
 					</div>
-				</div>
-				<div class="circle">
-					<div>
-						<img src="assets/images/mountain.jpg" alt="mountain" />
+					<div class="circle">
+						<div>
+							<img src="assets/images/cheapcompetition.jpg" alt="cheap competition" />
+						</div>
+						<div>
+						<h2>3#</h2>
+							<p>Downhill Advendture is the cheapest location in Europe for mountain bike competition</p>							
+						</div>
 					</div>
-					<div>
-						<h2>2#</h2>
-						<p>Downhill Adventure has the best reputation for driving in mountains.</p>							
-					</div>
-				</div>
-				<div class="circle">
-					<div>
-						<img src="assets/images/cheapcompetition.jpg" alt="cheap competition" />
-					</div>
-					<div>
-					<h2>3#</h2>
-						<p>Downhill Advendture is the cheapest location in Europe for mountain bike competition</p>							
-					</div>
-				</div>
-		    </div>
-		    <div class="factsquick">
-		    	<h2>Quick facts:</h2>
-		    	<p>Lorem ipsum dolor sit amet, a duis, aliquam eros venenatis ultrices integer lectus, ultrices ligula elit blandit libero vehicula ligula. Pede wisi nibh erat, ultricies mi varius ultricies rhoncus, pellentesque maecenas in faucibus mauris eget, praesent pulvinar aliquet dui libero.</p>
-		    	<br>
-		    	<p>Suscipit cras condimentum curabitur erat pede, lorem eget curabitur pellentesque. Augue ultricies eget, nibh nibh pede natoque tempus. Pulvinar nisl etiam in. Convallis a curabitur fringilla venenatis, dictumst hic id, tempore montes vulputate maecenas.</p>
-		    </div>
+			    </div>
+			    <div class="factsquick">
+			    	<h2>Summer holiday event</h2>
+			    	<p>Lorem ipsum dolor sit amet, a duis, aliquam eros venenatis ultrices integer lectus, ultrices ligula elit blandit libero vehicula ligula. Pede wisi nibh erat, ultricies mi varius ultricies rhoncus, pellentesque maecenas in faucibus mauris eget, praesent pulvinar aliquet dui libero.</p>
+			    	<br>
+			    	<p>Suscipit cras condimentum curabitur erat pede, lorem eget curabitur pellentesque. Augue ultricies eget, nibh nibh pede natoque tempus. Pulvinar nisl etiam in. Convallis a curabitur fringilla venenatis, dictumst hic id, tempore montes vulputate maecenas.</p>
+			    </div>
+			</div>
 		</div>
 
 		<!-- EVENTS -->
@@ -163,24 +164,33 @@
 			<div class="howtoheader">
 			    <div class="guideinfo">
 			    <h2>Price</h2>
-				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
+				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac. Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate.</p>
 			    </div>
 			    <div class="guideinfo">
 			    <h2>Accommodation</h2>
-				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
+				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac. Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate.</p>
 			    </div>
 			    <div class="guideinfo">
 			    <h2>Equipment</h2>
-				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac.</p>
+				<p>Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate. Mollis in, dolor justo, et lacinia nunc dui, tempus feugiat laoreet ac. Faucibus pede ad, diam lacus dictum sodales sociosqu aliquam, fermentum nec ultricies ea nihil ut vulputate.</p>
 			    </div>
-
-				<div class="register">
-			    	<a href="#">See packages</a>
-				</div>
-
 			</div>
 		</div>
 
+		<!-- ATTENTION PAGE -->
+		<div class="sectionheader" id="contactstop">
+
+			<h1>READY?</h1>
+
+		</div>
+		<div class="attentionbg">
+			<div class="attentionheader">
+				<h1>Are you ready for Downhill Adventure?</h1>
+			    	<button type="submit" class="greenbutton">Register now</button>
+			    	<button type="submit" class="graybutton">I am not prepared</button>
+			</div>
+		</div>
+		
 		<!-- CONTACT -->
 		<div class="sectionheader" id="contactstop">
 
@@ -198,10 +208,22 @@
 			    </form>
 			</div>
 		</div>
-		
-		<div id="footer">
-			
 
+		<div id="footer">
+			<div class="footerinside">
+				<div class="contactinformation">
+					<p>Phone: 53 66 22 77</p>
+					<p>Email: contact@mbikeadventure.com</p>
+					<p>Adress: Baumstrasse 55, Saint-Luc, Switzerland</p>
+				</div>
+
+				<div class="socialmedia">
+				<a href=""><img src="assets/images/socialmedia/facebook.png" alt=""></a>
+				<a href=""><img src="assets/images/socialmedia/youtube.png" alt=""></a>
+				<a href=""><img src="assets/images/socialmedia/twitter.png" alt=""></a>
+				<a href=""><img src="assets/images/socialmedia/instagram.png" alt=""></a>
+				</div>
+			</div>
 
 		</div>
 	

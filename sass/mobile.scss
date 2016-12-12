@@ -23,6 +23,7 @@ $lightgreen: #55a939;
 $darkgreen: #3e9f1a;
 $lightgray: #DCDCDC;
 $darkgray: #a9a9a9;
+$verydarkgray: #808080;
 
 $black: #333;
 
@@ -146,7 +147,7 @@ video {
   }
 }
 
-.factheader, .eventheader, .howtoheader, .contactheader {
+.factheader, .eventheader, .howtoheader, .contactheader, .attentionheader, .footerinside {
   @include container;
   line-height: 1.5;
   
@@ -178,6 +179,12 @@ video {
         }
     }
   }
+
+  .factsquick {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 //EVENTS
@@ -201,6 +208,12 @@ video {
   }
 }
 
+.factbg {
+  /*background: url("../assets/images/cover.jpg");
+  background-size: cover;
+  overflow: auto;*/
+}
+
 .howtobg {
 
   //bacground image
@@ -213,24 +226,56 @@ video {
     background-color: rgba(209, 232, 240, 0.7);
     padding: 10px;
 
-    .register {
-      text-align: center;
-      @include span(12);
-      padding: 50px;
+    .guideinfo {
+      h2 {
+        margin-bottom: 10px;
+      }
+    }
 
-      a{
-          padding: 12px 25px 12px 25px;
-          background-color: $darkred;
-          color: $white;
-          text-decoration: none;
-          border-radius: 4px;
-          transition: 0.1s;
-          margin-top: 7%;
-          box-shadow: 1px 3px 7px -2px rgba(1,1,0,1);
-      }
-      a:hover {
+  }
+}
+
+.attentionbg {
+  
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+  .attentionheader {
+    text-align: center;
+
+    h1 {
+      font-size: 25px;
+    }
+
+    .graybutton {
+      background-color: $darkgray;
+    }
+    .graybutton:hover {
+      background-color: $verydarkgray;
+      cursor: pointer;
+    }
+    .greenbutton {
       background-color: $lightred;
-      }
+    }
+    .greenbutton:hover {
+      background-color: $darkred;
+      cursor: pointer;
+    }
+
+    button {
+      margin: 1%;
+      line-height: 1;
+      display: inline-block;
+      padding: 12px 25px 12px 25px;
+      color: $white;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.1s;
+      box-shadow: 1px 3px 7px -2px rgba(1,1,0,1);
+
+      border: none;
+      margin-bottom: 10px;
+      margin-top: 20px;
     }
   }
 }
@@ -290,8 +335,27 @@ video {
 
 //FOOTER
 #footer {
-  height: 100px;
   background-color: $darkgreen;
+
+  .footerinside {
+    color: $white;
+
+    .contactinformation {
+      p{
+        line-height: 2;
+      }
+    }
+    .socialmedia {
+      img {
+        width: 50px;
+        background-color: white;
+        border-radius: 50px;
+      }
+      a{
+        margin: 2px;
+      }
+    }
+  }
 }
 
 /**

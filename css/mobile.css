@@ -95,16 +95,16 @@ video {
     font-size: 25px;
     color: #FFFFFF; }
 
-.factheader, .eventheader, .howtoheader, .contactheader {
+.factheader, .eventheader, .howtoheader, .contactheader, .attentionheader, .footerinside {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5; }
-  .factheader:after, .eventheader:after, .howtoheader:after, .contactheader:after {
+  .factheader:after, .eventheader:after, .howtoheader:after, .contactheader:after, .attentionheader:after, .footerinside:after {
     content: " ";
     display: block;
     clear: both; }
-  .factheader div, .eventheader div, .howtoheader div, .contactheader div {
+  .factheader div, .eventheader div, .howtoheader div, .contactheader div, .attentionheader div, .footerinside div {
     padding: 10px;
     box-sizing: border-box; }
 
@@ -119,6 +119,9 @@ video {
     .factheader .factscircles .circle div p {
       font-weight: 600; }
 
+.factheader .factsquick h2 {
+  margin-bottom: 20px; }
+
 .eventbg .eventheader {
   background: transparent; }
   .eventbg .eventheader .event img {
@@ -128,6 +131,11 @@ video {
     color: #a9a9a9;
     margin: 7px auto; }
 
+.factbg {
+  /*background: url("../assets/images/cover.jpg");
+  background-size: cover;
+  overflow: auto;*/ }
+
 .howtobg {
   background: url("../assets/images/drivingdownhill.jpg");
   background-size: cover;
@@ -135,24 +143,39 @@ video {
   .howtobg .howtoheader {
     background-color: rgba(209, 232, 240, 0.7);
     padding: 10px; }
-    .howtobg .howtoheader .register {
-      text-align: center;
-      width: 100%;
-      float: left;
-      margin-left: 0;
-      margin-right: 0;
-      padding: 50px; }
-      .howtobg .howtoheader .register a {
-        padding: 12px 25px 12px 25px;
-        background-color: #b71111;
-        color: #FFFFFF;
-        text-decoration: none;
-        border-radius: 4px;
-        transition: 0.1s;
-        margin-top: 7%;
-        box-shadow: 1px 3px 7px -2px #010100; }
-      .howtobg .howtoheader .register a:hover {
-        background-color: #d41414; }
+    .howtobg .howtoheader .guideinfo h2 {
+      margin-bottom: 10px; }
+
+.attentionbg {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  .attentionbg .attentionheader {
+    text-align: center; }
+    .attentionbg .attentionheader h1 {
+      font-size: 25px; }
+    .attentionbg .attentionheader .graybutton {
+      background-color: #a9a9a9; }
+    .attentionbg .attentionheader .graybutton:hover {
+      background-color: #808080;
+      cursor: pointer; }
+    .attentionbg .attentionheader .greenbutton {
+      background-color: #d41414; }
+    .attentionbg .attentionheader .greenbutton:hover {
+      background-color: #b71111;
+      cursor: pointer; }
+    .attentionbg .attentionheader button {
+      margin: 1%;
+      line-height: 1;
+      display: inline-block;
+      padding: 12px 25px 12px 25px;
+      color: #FFFFFF;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.1s;
+      box-shadow: 1px 3px 7px -2px #010100;
+      border: none;
+      margin-bottom: 10px;
+      margin-top: 20px; }
 
 .contactbg {
   background: url("../assets/images/mountains.jpg");
@@ -194,8 +217,17 @@ video {
       cursor: pointer; }
 
 #footer {
-  height: 100px;
   background-color: #3e9f1a; }
+  #footer .footerinside {
+    color: #FFFFFF; }
+    #footer .footerinside .contactinformation p {
+      line-height: 2; }
+    #footer .footerinside .socialmedia img {
+      width: 50px;
+      background-color: white;
+      border-radius: 50px; }
+    #footer .footerinside .socialmedia a {
+      margin: 2px; }
 
 /**
 

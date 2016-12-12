@@ -19,9 +19,36 @@
 	}
 
 	.howtoheader, .eventheader {
+  
 	    border-radius: 8px;
 	    background-color: red;
 	}
+
+	//ATTENTION PAGE
+	.attentionbg {
+		.attentionheader {
+			h1 {
+			font-size: 40px;
+			}
+			button {
+			margin: auto 5px;
+			margin-top: 15px;
+			}
+		}
+	}
+
+	//FOOTER
+  #footer {
+    .footerinside {
+      .contactinformation {
+        @include span(4);
+      }
+      .socialmedia {
+        @include span(4 last);
+		
+      }
+    }
+  }
 
 }
 

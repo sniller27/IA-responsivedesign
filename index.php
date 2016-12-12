@@ -193,7 +193,7 @@
 		</div>
 		
 		<!-- CONTACT -->
-		<div class="sectionheader">
+		<div class="sectionheader" id="contactstop">
 
 			<h1>CONTACT</h1>
 

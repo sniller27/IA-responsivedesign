@@ -138,6 +138,7 @@ video {
   height: 100vh;
   position: relative;
   left: -300px;
+  min-height: 550px;
 }
 
 .wrap {
@@ -455,4 +456,13 @@ ul.topnav li.icon {display: none;}
     display: inline-block;
 		float: right;
 	}
+}
+
+
+//VIDEO ADJUST
+@media screen and (min-width: 400px){
+  //VIDEO
+    video { 
+      left: 0px;
+    }
 }

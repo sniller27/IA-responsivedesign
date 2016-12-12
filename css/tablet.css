@@ -6,8 +6,6 @@
 @media screen and (min-width: 768px) {
   .factheader, .eventheader, .howtoheader, .contactheader, .attentionheader {
     margin: 100px auto; }
-  video {
-    left: 0px; }
   .myjumbotron {
     height: 50%; }
     .myjumbotron a {

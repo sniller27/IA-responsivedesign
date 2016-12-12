@@ -41,6 +41,10 @@ h1 {
 }
 h2 {
   font-size: 30px;
+  font-weight: 600; 
+}
+h3 {
+  font-size: 20px;
 }
 
 
@@ -82,7 +86,7 @@ header {
 }
 //JUMBOTRON
 .myjumbotron {
-  height: 50%;
+  height: 71%;
   text-align: center;
   line-height: 2;
 
@@ -110,11 +114,19 @@ header {
     text-decoration: none;
     border-radius: 4px;
     transition: 0.1s;
-    margin-top: 7%;
+    margin-top: 3%;
     box-shadow: 1px 3px 7px -2px rgba(1,1,0,1);
   }
   a:hover {
     background-color: $lightred;
+  }
+  .logotop {
+    height: 38%;
+    width: 26%;
+    background: url("../assets/images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
   }
 }
 
@@ -183,6 +195,10 @@ video {
   .factsquick {
     h2 {
       margin-bottom: 20px;
+      font-weight: 600;
+    }
+    h3 {
+      font-weight: 600;
     }
   }
 }
@@ -245,6 +261,7 @@ video {
 
     h1 {
       font-size: 25px;
+      font-weight: 600;
     }
 
     .graybutton {
@@ -276,6 +293,7 @@ video {
       border: none;
       margin-bottom: 10px;
       margin-top: 20px;
+      font-weight: 600;
     }
   }
 }
@@ -290,6 +308,7 @@ video {
   .contactheader {
     h2, h1 {
       text-align: center;
+      font-weight: 600;
     }
     form {
       width: 300px;
@@ -321,6 +340,7 @@ video {
         border-radius: 4px;
         transition: 0.1s;
         box-shadow: 1px 3px 7px -2px rgba(1,1,0,1);
+        font-weight: 600;
 
         border: none;
         margin-bottom: 10px;
@@ -343,6 +363,7 @@ video {
     .contactinformation {
       p{
         line-height: 2;
+        font-weight: 600;
       }
     }
     .socialmedia {
@@ -451,6 +472,11 @@ ul.topnav li.icon {display: none;}
 
   //JUMBOTRON
   .myjumbotron {
+    height: 50%;
+
+    a {
+      margin-top: 7%;
+    }
     h1 {
       line-height: 1;
       font-size: 4vw;
@@ -537,6 +563,7 @@ ul.topnav li.icon {display: none;}
 
     .footerinside {
       color: white;
+      padding: 20px 10px;
 
       .contactinformation {
         @include span(6);

@@ -13,7 +13,7 @@
 		<!-- CSS reset -->
 		<link href="css/reset.css" rel="stylesheet" type="text/css">
 		<!-- Google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 		<!-- custom SASS -->
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 
@@ -118,6 +118,7 @@
 			    	<h2>Summer holiday event</h2>
 			    	<p>Lorem ipsum dolor sit amet, a duis, aliquam eros venenatis ultrices integer lectus, ultrices ligula elit blandit libero vehicula ligula. Pede wisi nibh erat, ultricies mi varius ultricies rhoncus, pellentesque maecenas in faucibus mauris eget, praesent pulvinar aliquet dui libero.</p>
 			    	<br>
+			    	<h3>Competition</h3>
 			    	<p>Suscipit cras condimentum curabitur erat pede, lorem eget curabitur pellentesque. Augue ultricies eget, nibh nibh pede natoque tempus. Pulvinar nisl etiam in. Convallis a curabitur fringilla venenatis, dictumst hic id, tempore montes vulputate maecenas.</p>
 			    </div>
 			</div>
@@ -178,7 +179,7 @@
 		</div>
 
 		<!-- ATTENTION PAGE -->
-		<div class="sectionheader" id="contactstop">
+		<div class="sectionheader">
 
 			<h1>READY?</h1>
 
@@ -192,7 +193,7 @@
 		</div>
 		
 		<!-- CONTACT -->
-		<div class="sectionheader" id="contactstop">
+		<div class="sectionheader">
 
 			<h1>CONTACT</h1>
 
@@ -218,10 +219,10 @@
 				</div>
 
 				<div class="socialmedia">
-				<a href=""><img src="assets/images/socialmedia/facebook.png" alt=""></a>
-				<a href=""><img src="assets/images/socialmedia/youtube.png" alt=""></a>
-				<a href=""><img src="assets/images/socialmedia/twitter.png" alt=""></a>
-				<a href=""><img src="assets/images/socialmedia/instagram.png" alt=""></a>
+				<a href=""><img src="assets/images/socialmedia/facebook.png" alt="facebook"></a>
+				<a href=""><img src="assets/images/socialmedia/youtube.png" alt="youtube"></a>
+				<a href=""><img src="assets/images/socialmedia/twitter.png" alt="twitter"></a>
+				<a href=""><img src="assets/images/socialmedia/instagram.png" alt="instagram"></a>
 				</div>
 			</div>
 

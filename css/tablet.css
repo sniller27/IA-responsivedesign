@@ -6,20 +6,24 @@
 @media screen and (min-width: 768px) {
   .factheader, .eventheader, .howtoheader, .contactheader, .attentionheader {
     margin: 100px auto; }
-  .myjumbotron h1 {
-    line-height: 1;
-    font-size: 4vw; }
-  .myjumbotron h2 {
-    display: block;
-    font-size: 2.5vw;
-    line-height: 1.5; }
-  .myjumbotron .logotop {
-    height: 100px;
-    width: 168px;
-    background: url("../assets/images/logo.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: auto; }
+  .myjumbotron {
+    height: 50%; }
+    .myjumbotron a {
+      margin-top: 7%; }
+    .myjumbotron h1 {
+      line-height: 1;
+      font-size: 4vw; }
+    .myjumbotron h2 {
+      display: block;
+      font-size: 2.5vw;
+      line-height: 1.5; }
+    .myjumbotron .logotop {
+      height: 100px;
+      width: 168px;
+      background: url("../assets/images/logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: auto; }
   .sectionheader h1 {
     font-size: 50px; }
   .factheader .factscircles {
@@ -55,7 +59,8 @@
     margin: auto 5px;
     margin-top: 15px; }
   #footer .footerinside {
-    color: white; }
+    color: white;
+    padding: 20px 10px; }
     #footer .footerinside .contactinformation {
       width: 152.63158%;
       float: left;

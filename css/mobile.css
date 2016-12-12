@@ -13,7 +13,11 @@ h1 {
   font-size: 50px; }
 
 h2 {
-  font-size: 30px; }
+  font-size: 30px;
+  font-weight: 600; }
+
+h3 {
+  font-size: 20px; }
 
 body {
   font-family: "Open Sans", sans-serif; }
@@ -44,7 +48,7 @@ header {
   justify-content: center; }
 
 .myjumbotron {
-  height: 50%;
+  height: 71%;
   text-align: center;
   line-height: 2; }
   .myjumbotron h1 {
@@ -68,10 +72,17 @@ header {
     text-decoration: none;
     border-radius: 4px;
     transition: 0.1s;
-    margin-top: 7%;
+    margin-top: 3%;
     box-shadow: 1px 3px 7px -2px #010100; }
   .myjumbotron a:hover {
     background-color: #d41414; }
+  .myjumbotron .logotop {
+    height: 38%;
+    width: 26%;
+    background: url("../assets/images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto; }
 
 video {
   background-size: cover;
@@ -120,7 +131,11 @@ video {
       font-weight: 600; }
 
 .factheader .factsquick h2 {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  font-weight: 600; }
+
+.factheader .factsquick h3 {
+  font-weight: 600; }
 
 .eventbg .eventheader {
   background: transparent; }
@@ -152,7 +167,8 @@ video {
   .attentionbg .attentionheader {
     text-align: center; }
     .attentionbg .attentionheader h1 {
-      font-size: 25px; }
+      font-size: 25px;
+      font-weight: 600; }
     .attentionbg .attentionheader .graybutton {
       background-color: #a9a9a9; }
     .attentionbg .attentionheader .graybutton:hover {
@@ -175,14 +191,16 @@ video {
       box-shadow: 1px 3px 7px -2px #010100;
       border: none;
       margin-bottom: 10px;
-      margin-top: 20px; }
+      margin-top: 20px;
+      font-weight: 600; }
 
 .contactbg {
   background: url("../assets/images/mountains.jpg");
   background-size: cover;
   overflow: auto; }
   .contactbg .contactheader h2, .contactbg .contactheader h1 {
-    text-align: center; }
+    text-align: center;
+    font-weight: 600; }
   .contactbg .contactheader form {
     width: 300px;
     margin: 30px auto;
@@ -210,6 +228,7 @@ video {
       border-radius: 4px;
       transition: 0.1s;
       box-shadow: 1px 3px 7px -2px #010100;
+      font-weight: 600;
       border: none;
       margin-bottom: 10px; }
     .contactbg .contactheader form button:hover {
@@ -221,7 +240,8 @@ video {
   #footer .footerinside {
     color: #FFFFFF; }
     #footer .footerinside .contactinformation p {
-      line-height: 2; }
+      line-height: 2;
+      font-weight: 600; }
     #footer .footerinside .socialmedia img {
       width: 50px;
       background-color: white;

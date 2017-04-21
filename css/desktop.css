@@ -1,0 +1,33 @@
+/*
+
+    LARGE SCREEN
+
+*/
+@media screen and (min-width: 1035px) {
+  video {
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    height: inherit; }
+  .myjumbotron h1 {
+    font-size: 3.5vw; }
+  .myjumbotron h2 {
+    font-size: 1.7vw;
+    line-height: 2; }
+  .howtoheader, .eventheader {
+    border-radius: 8px;
+    background-color: red; }
+  .attentionbg .attentionheader h1 {
+    font-size: 40px; }
+  .attentionbg .attentionheader button {
+    margin: auto 5px;
+    margin-top: 15px; }
+  #footer .footerinside .contactinformation {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  #footer .footerinside .socialmedia {
+    width: 100%;
+    float: right;
+    margin-right: 0; } }

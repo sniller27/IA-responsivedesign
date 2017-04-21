@@ -1,0 +1,126 @@
+@import "../node_modules/susy/sass/_susy.scss";
+
+/*
+
+    MEDIUM SCREEN
+
+*/
+@media screen and (min-width: 768px){
+
+  //SPACE
+  .factheader, .eventheader, .howtoheader, .contactheader, .attentionheader {
+    margin: 100px auto;
+  }
+
+  //HEADER
+  .header-bg {
+    // box-shadow: 1px 0px 7px -2px #010100;
+  }
+
+  //JUMBOTRON
+  .myjumbotron {
+    height: 50%;
+
+    a {
+      margin-top: 7%;
+    }
+    h1 {
+      line-height: 1;
+      font-size: 4vw;
+    }
+    h2 {
+      display: block;
+      font-size: 2.5vw;
+      line-height: 1.5;
+    }
+    .logotop {
+      height: 100px;
+      width: 168px;
+      background: url("../assets/images/logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: auto;
+    }
+  }
+
+  //SECTIONS
+  .sectionheader {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  //FACTS
+  .factheader {
+    .factscircles {
+      @include span(6);
+    }
+
+    .factsquick {
+      @include span(6 last);
+    }
+  }
+  
+  //3 COLUMN LAYOUT
+  .event, .guideinfo {
+    &:nth-child(1), &:nth-child(2){
+      @include span(4);
+    }
+    &:nth-child(3){
+      @include span(4 last);
+    }
+  }
+  
+  //EVENTS
+  .event {
+    h2{
+      text-align: center;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
+    .italic {
+      text-align: center;
+    }
+  }
+
+
+  //NAVBAR
+  ul.topnav {
+    background: transparent;
+  }
+  
+  //ATTENTION PAGE
+  .attentionbg {
+    .attentionheader {
+      h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+      button {
+        margin: auto 5px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  //FOOTER
+  #footer {
+
+    .footerinside {
+      color: white;
+      padding: 20px 10px;
+
+      .contactinformation {
+        @include span(6);
+      }
+      .socialmedia {
+        margin-top: 30px;
+        
+        @include span(6 last);
+      }
+    }
+  }
+
+}

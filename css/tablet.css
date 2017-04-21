@@ -1,0 +1,72 @@
+/*
+
+    MEDIUM SCREEN
+
+*/
+@media screen and (min-width: 768px) {
+  .factheader, .eventheader, .howtoheader, .contactheader, .attentionheader {
+    margin: 100px auto; }
+  .myjumbotron {
+    height: 50%; }
+    .myjumbotron a {
+      margin-top: 7%; }
+    .myjumbotron h1 {
+      line-height: 1;
+      font-size: 4vw; }
+    .myjumbotron h2 {
+      display: block;
+      font-size: 2.5vw;
+      line-height: 1.5; }
+    .myjumbotron .logotop {
+      height: 100px;
+      width: 168px;
+      background: url("../assets/images/logo.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: auto; }
+  .sectionheader h1 {
+    font-size: 50px; }
+  .factheader .factscircles {
+    width: 152.63158%;
+    float: left;
+    margin-right: 5.26316%; }
+  .factheader .factsquick {
+    width: 152.63158%;
+    float: right;
+    margin-right: 0; }
+  .event:nth-child(1), .event:nth-child(2), .guideinfo:nth-child(1), .guideinfo:nth-child(2) {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+  .event:nth-child(3), .guideinfo:nth-child(3) {
+    width: 100%;
+    float: right;
+    margin-right: 0; }
+  .event h2 {
+    text-align: center; }
+  .event img {
+    display: block;
+    margin: auto; }
+  .event .italic {
+    text-align: center; }
+  ul.topnav {
+    background: transparent; }
+  .attentionbg .attentionheader h1 {
+    font-size: 40px;
+    margin-bottom: 30px; }
+  .attentionbg .attentionheader button {
+    margin: auto 5px;
+    margin-top: 15px; }
+  #footer .footerinside {
+    color: white;
+    padding: 20px 10px; }
+    #footer .footerinside .contactinformation {
+      width: 152.63158%;
+      float: left;
+      margin-right: 5.26316%; }
+    #footer .footerinside .socialmedia {
+      margin-top: 30px;
+      width: 152.63158%;
+      float: right;
+      margin-right: 0; } }
